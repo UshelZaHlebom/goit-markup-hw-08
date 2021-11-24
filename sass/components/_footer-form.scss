@@ -1,0 +1,65 @@
+.form-space{
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-mail-input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    background-color: var(--background-filler-color);
+    color: var(--hub-color);
+
+    &::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &:focus{
+    outline:none;
+    border-color: var(--major-color);
+    }
+    
+    &:checked::placeholder{
+    color: #fff
+    }
+}
+
+
+
+.footer-subscribe-section{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer-form-button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color:var(--hub-color);
+    background-color: var(--major-color);
+    cursor: pointer;
+    padding: 10px 55px 10px 56px;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 200px;
+    height: 50px;
+}
+
+.sendicon-icon{
+    margin-left: 10px;
+    fill: var(--hub-color);
+}
+
+.footer-form-button > span{
+    display: flex;
+    align-items: center;
+}

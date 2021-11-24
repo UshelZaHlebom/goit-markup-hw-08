@@ -1,0 +1,51 @@
+// Hero button
+
+.hero-btn{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color:var(--hub-color);
+    background-color: var(--major-color);
+    cursor: pointer;
+    padding: 10px 32px 10px 32px;
+    border-radius: 4px;
+    border-color: transparent;
+
+    &:hover,
+    &:focus{
+    background-color:var(--button-hover-color);
+    }
+}
+
+// Portfolio button
+
+.filter-btn{
+    font-family: inherit;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color:var(--major-color);
+    color:var(--hub-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.filter-btn-list{
+    margin-bottom: 50px
+}
+
+.button-customization:not(:last-child){
+    margin-right: 8px;
+}

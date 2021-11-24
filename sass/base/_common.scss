@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--header-color);
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    width:100%;
+}
+
+section{
+    padding: 94px 0 94px 0;
+}
+
+.nodots {
+    list-style: none;
+}
+
+.nounderline {
+    text-decoration: none;
+}
