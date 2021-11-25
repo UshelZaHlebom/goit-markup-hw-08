@@ -27,7 +27,7 @@
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tablet.jpg");
     
-        max-width: 768px;
+        max-width: 100%;
     
         @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -60,5 +60,16 @@
     margin: auto;
     margin-bottom: 30px;
     width: 360px;
+    
+    @media screen and (min-width: 320px){
+        overflow-wrap: break-word;
+    
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;   
+    }
 }
 

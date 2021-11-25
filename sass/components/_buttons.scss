@@ -49,3 +49,71 @@
 .button-customization:not(:last-child){
     margin-right: 8px;
 }
+
+// Mobile menu modal button
+
+.burger__btn {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+}
+
+.burger__icon-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile__menu {
+    position: fixed;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 48px 40px;
+
+    background-color: var(--hub-color);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile__menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.close__btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    line-height: 0;
+
+    border: none;
+}
+
+.burger__close-icon {
+    width: 40px;
+    height: 40px;
+}

@@ -1,10 +1,4 @@
-@media screen and (max-width: 480px) {
-  .examples-section {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .examples-section {
     display: none;
   }
@@ -246,64 +240,6 @@
   color: var(--major-color);
 }
 
-.burger__btn {
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  line-height: 0;
-  border: none;
-}
-
-@media screen and (min-width: 767px) {
-  .burger__btn {
-    display: none;
-  }
-}
-
-.burger__icon-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.mobile__menu {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: var(--hub-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 250ms linear, visibility 250ms linear;
-}
-
-.mobile__menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-.close__btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  line-height: 0;
-  border: none;
-}
-
-.burger__close-icon {
-  width: 40px;
-  height: 40px;
-}
-
 .contacts__list {
   font-weight: 500;
   font-size: 14px;
@@ -396,7 +332,7 @@
 @media screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-tablet.jpg");
-    max-width: 768px;
+    max-width: 100%;
   }
 }
 
@@ -430,6 +366,20 @@
   margin: auto;
   margin-bottom: 30px;
   width: 360px;
+}
+
+@media screen and (min-width: 320px) {
+  .hero-header {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .project-list-header {
@@ -513,12 +463,26 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .pros-list {
+    display: block;
+  }
 }
 
 .pros-list-item {
-  flex-basis: calc(100%/4 - 30px);
+  flex-basis: calc(100%/2 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  .pros-list-item {
+    flex-basis: calc(100%/4 - 30px);
+  }
 }
 
 .pros-svg {
@@ -543,17 +507,17 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .pros-header {
+    text-align: center;
+  }
+}
+
 .pros-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--description-color);
-}
-
-@media screen and (max-width: 480px) {
-  .team-section {
-    display: block;
-  }
 }
 
 .team-list {
@@ -563,19 +527,25 @@
   margin-top: -30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-list {
     display: block;
   }
 }
 
 .team-list-item {
-  flex-basis: calc(100%/4 - 30px);
+  flex-basis: calc(100%/2 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    flex-basis: calc(100%/4 - 30px);
+  }
 }
 
 .team-list-photo {
@@ -1100,6 +1070,64 @@ section {
 
 .button-customization:not(:last-child) {
   margin-right: 8px;
+}
+
+.burger__btn {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .burger__btn {
+    display: none;
+  }
+}
+
+.burger__icon-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile__menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--hub-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.close__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  border: none;
+}
+
+.burger__close-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .logocolor {
