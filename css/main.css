@@ -161,15 +161,15 @@
   .header__container {
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
