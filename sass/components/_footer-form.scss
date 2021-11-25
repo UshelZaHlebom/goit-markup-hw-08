@@ -1,5 +1,7 @@
 .form-space{
-    display: flex;
+    display: block;
+    justify-content: flex-start;
+    align-items: baseline;
     
 
     @media screen and (max-width: 767px){
@@ -43,17 +45,12 @@
     }
 }
 
-
-
-.footer-subscribe-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer-form{
     width: 450px;
     text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
 }
 
 .footer-form-button{
