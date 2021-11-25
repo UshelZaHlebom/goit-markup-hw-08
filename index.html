@@ -22,10 +22,30 @@
                 <li class="nav__item"><a class="nav__link nounderline" href="./">Контакты</a></li>
                 </ul>
             </nav>
+
+            <!-- Mobile Menu Start-->
+            <button class="burger__btn" data-menu-open>
+                <svg class="burger__icon-icon">
+                    <use href="./images/sprite.svg#burger__icon-icon"></use>
+                </svg>
+            </button>
+
+            <div class="mobile__menu" data-menu>
+                <button class="close__btn" data-menu-close>
+                    <svg class="burger__close-icon">
+                    <use href="./images/sprite.svg#icon-Closebutton"></use>
+                    </svg>
+                </button>
+
+                <p class="test">Some text here!</p>
+
+            </div>
+            <!-- Mobile Menu Finish-->
+                <div class="contacts">
                 <ul class="contacts__list nodots">
                 <li class="contacts__item">
                     <a class="contacts__list nounderline" href="mailto:info@devstudio.com">
-                        <svg class="header__mail" width="16" height="16">
+                        <svg class="contacts__mail" width="16" height="16">
                             <use href="./images/icons.svg#icon-mailico">
                             </use>
                         </svg>
@@ -34,12 +54,13 @@
                 </li>
                 <li class="contacts__item">
                     <a class="contacts__list nounderline" href="tel:+380961111111">
-                        <svg class="header__tel" width="16" height="16">
+                        <svg class="contacts__tel" width="16" height="16">
                             <use href="./images/icons.svg#icon-telico">
                             </use>
                         </svg>
                     +38 096 111 11 11</a></li>
                 </ul>
+                </div>
             </div>
             </header>
         <main>
