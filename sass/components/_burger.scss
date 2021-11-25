@@ -1,15 +1,15 @@
 .mobile__menu{
     padding:48px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav__item--mobile{
     &:not(:last-child){
         margin-bottom: 32px;
     }
-}
-
-.nav--mobile{
-    margin-bottom: 302px;
 }
 
 .nav__link--mobile{
