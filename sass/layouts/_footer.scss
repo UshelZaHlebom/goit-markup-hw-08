@@ -2,6 +2,13 @@
     display: flex;
     align-items: baseline;
     padding: 60px 15px;
+
+    @media screen and (max-width: 767px){
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
 }
 
 .studio-footer{
@@ -104,5 +111,10 @@
 
 .footer-media-icon{
     fill: var(--background-color);
+}
+
+.footer-subscribe-section{
+    display:flex;
+    flex-direction: column;
 }
 
