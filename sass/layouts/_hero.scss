@@ -13,6 +13,11 @@
     display:block;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px){
+        padding-top: 118px;
+        padding-bottom: 128px;
+    }
 }
 
 .hero-header{

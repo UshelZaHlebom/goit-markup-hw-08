@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+
+    @media screen and (min-width: 480px) {
+    display: block;
+    }
 }
 
 .pros-list-item{
@@ -31,6 +35,10 @@ padding-bottom: 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 480px){
+        text-align: center;
+    }
 }
 
 .pros-description{
