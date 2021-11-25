@@ -95,6 +95,7 @@
     cursor: pointer;
     height: 24px;
     text-align: center;
+    flex-wrap: wrap;
 
     &::before {
     display:block;
