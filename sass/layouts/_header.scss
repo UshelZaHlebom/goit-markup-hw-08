@@ -22,17 +22,17 @@
     color:#000000;
 }
 
-.header__nav{
+.nav{
     display: flex;
     height: 100%;
 }
 
-.header__list{
+.nav__list{
     display: flex;
     align-items: center;
 }
 
-.header__item{
+.nav__item{
     height:100%;
     display:flex;
     align-items: center;
@@ -42,7 +42,7 @@
     }
 }
 
-.header__link {
+.nav__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,7 +60,7 @@
 }
 
 
-.header__contacts{
+.contacts__list{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -92,7 +92,7 @@
     margin-right: 10px;
 }
 
-.header__link.current{
+.nav__link.nav__link--current{
     color:var(--major-color);
     position: relative;
 
@@ -109,12 +109,12 @@
 
 
 
-.header__contacts{
+.contacts__list{
     display: flex;
     margin-left: auto;
 }
 
-.header__contacts-item{
+.contacts__item{
     display:flex;
 
     &:not(:last-child){
