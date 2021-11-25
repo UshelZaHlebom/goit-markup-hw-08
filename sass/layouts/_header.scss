@@ -11,16 +11,19 @@
         align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
+        height: 60px;
     }
     
     @media screen and (min-width: 768px){
         padding-top: 21px;
         padding-bottom: 21px;
+        height:80px;
     }
     
     @media screen and (min-width: 1200px){
         padding-top: 24px;
         padding-bottom: 25px;
+        height:80px;
     }
 }
 
@@ -39,7 +42,7 @@
 
 .nav{
     display: flex;
-
+    height: inherit;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -48,12 +51,14 @@
 .nav__list{
     display: flex;
     align-items: center;
+    height: inherit;
 }
 
 .nav__item{
     height:100%;
     display:flex;
     align-items: center;
+    height:inherit;
 
     &:not(:last-child){
         margin-right: 50px;
