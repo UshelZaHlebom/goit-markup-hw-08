@@ -13,18 +13,18 @@
     color:var(--description-color);
 }
 
-.filter-btn-list{
-    display: flex;
-    justify-content: center;
-}
-
-
-
 .project-list{
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+
+    @media screen and (max-width: 767px){
+        display:block;  
+        margin-top: 0;
+        margin-left: 0;
+    }
+
 }
 
 .project-list-item{
@@ -33,6 +33,12 @@
     margin-top: 30px;
     background: #FFFFFF;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px){
+
+        margin-top: 0;
+        margin-left: 0;
+    }
 
     &:hover,
     &:focus{

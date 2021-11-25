@@ -22,6 +22,49 @@
             <li class="nav__item"><a class="nav__link nounderline" href="./">Контакты</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Menu Start-->
+        <button class="burger__btn" data-menu-open>
+            <svg class="burger__icon-icon">
+                <use href="./images/icons.svg#burger__icon-icon"></use>
+            </svg>
+        </button>
+
+        <div class="mobile__menu" data-menu>
+            <button class="close__btn" data-menu-close>
+                <svg class="burger__close-icon">
+                <use href="./images/icons.svg#icon-Closebutton"></use>
+                </svg>
+            </button>
+
+            <div>
+            <nav class="nav--mobile">
+                <ul class="nav__list--mobile nodots">
+                <li class="nav__item--mobile"><a class="nav__link--mobile nounderline" href="./index.html">Студия</a></li>
+                <li class="nav__item--mobile"><a class="nav__link--mobile nounderline nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav__item--mobile"><a class="nav__link--mobile nounderline" href="./">Контакты</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <div class="nav--contacts">
+                <ul class="contacts__list--mobile nodots">
+                    <li class="contacts__item--tel" href="tel:+380961111111">+38 096 111 11 11</li>
+                    <li class="contacts__item--mail" href="mailto:info@devstudio.com">info@devstudio.com</li>
+                </ul>
+            </div>
+
+            <div class="nav--social">
+                <ul class="social__list--mobile nodots">
+                    <li class="social__item--mobile"><a class="social__link--mobile nounderline" href="//google.com">Instagram</a></li>
+                    <li class="social__item--mobile"><a class="social__link--mobile nounderline" href="//google.com">Twitter</a></li>
+                    <li class="social__item--mobile"><a class="social__link--mobile nounderline" href="//google.com">Facebook</a></li>
+                    <li class="social__item--mobile"><a class="social__link--mobile nounderline" href="//google.com">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile Menu Finish-->
+            <div class="contacts">
             <ul class="contacts__list nodots">
             <li class="contacts__item">
                 <a class="contacts__list nounderline" href="mailto:info@devstudio.com">
@@ -40,6 +83,7 @@
                     </svg>
                 +38 096 111 11 11</a></li>
             </ul>
+            </div>
         </div>
         </header>
 
@@ -149,6 +193,7 @@
 
     <footer class="studio-footer">
         <div class="container footer-container">
+        <div class="footer-info">
             <div class="logo-adress-footer">
             <div class="logo-customization">
             <a class="header__logo-footer nounderline logocolor" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -201,6 +246,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
             <div class="form-space">
                 <form action="#" class="footer-form">
                     <p class="footer-media-text">Подпишитесь на рассылку</p>
@@ -208,7 +254,7 @@
                     <div class="footer-subscribe-section">
                     <label class="footer-form-mail"></label>
                         <input
-                        type="mail"
+                        type="email"
                         class="footer-mail-input"
                         name="user-name"
                         title="test@gmail.com"
@@ -228,6 +274,6 @@
             </div>
         </div>
         </footer>
-
+        <script src="./js/menu.js"></script>
 </body>
 </html>

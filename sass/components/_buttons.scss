@@ -20,6 +20,15 @@
 
 // Portfolio button
 
+.filter-btn-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px){
+
+    }
+}
+
 .filter-btn{
     font-family: inherit;
     text-align: center;
