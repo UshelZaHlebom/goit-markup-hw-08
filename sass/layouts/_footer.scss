@@ -33,6 +33,13 @@
 
 .logo-adress-footer{
     margin-right: 70px;
+
+    @media screen and (max-width: 767px){
+        margin-right: 0px;
+        text-align:center;
+        margin-bottom: 60px;
+    }
+
 }
 
 
@@ -60,7 +67,10 @@
     }
 }
 
-
+.social-media-footer{
+    text-align: center;
+    margin-bottom: 60px;
+}
 .footer-media-text{
     font-size: 14px;
     line-height: 16px;

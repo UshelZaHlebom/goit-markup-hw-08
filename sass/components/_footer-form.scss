@@ -1,6 +1,10 @@
 .form-space{
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 767px){
+        justify-content: center;
+    }
 }
 
 .footer-mail-input{
@@ -13,6 +17,12 @@
     padding: 15px 16px;
     background-color: var(--background-filler-color);
     color: var(--hub-color);
+
+    @media screen and (max-width: 767px){
+        justify-content: center;
+        width:100%;
+        margin-bottom: 20px;
+    }
 
     &::placeholder{
     color: rgba(255, 255, 255, 0.6);
@@ -32,7 +42,13 @@
 
 .footer-subscribe-section{
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form{
+    width: 450px;
+    text-align: center;
 }
 
 .footer-form-button{
