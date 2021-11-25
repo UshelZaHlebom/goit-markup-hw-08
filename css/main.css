@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .examples-section {
     display: none;
   }
@@ -55,6 +55,12 @@
   display: flex;
   align-items: baseline;
   padding: 60px 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    display: block;
+  }
 }
 
 .studio-footer {
@@ -482,7 +488,7 @@
   margin-top: -30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .pros-list {
     display: block;
   }
@@ -529,7 +535,7 @@
   color: var(--description-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .team-section {
     display: block;
   }
@@ -542,7 +548,7 @@
   margin-top: -30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .team-list {
     display: block;
   }
@@ -609,7 +615,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .clients-list {
     flex-direction: column;
   }
