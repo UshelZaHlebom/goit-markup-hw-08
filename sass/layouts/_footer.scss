@@ -22,14 +22,12 @@
 }
 
 .header__logo-footer{
+    display: block;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.logo-customization{
     margin-bottom: 20px;
 }
 
@@ -75,7 +73,12 @@
 
 .social-media-footer{
     text-align: center;
-    margin-bottom: 60px;
+
+
+    @media screen and (min-width: 1200px){
+    margin-bottom:0;
+}
+    
 }
 .footer-media-text{
     font-size: 14px;
@@ -142,6 +145,9 @@
 }
 
 .footer-info{
+    @media screen and (max-width: 767px){
+    margin-bottom:60px; 
+    }
     @media screen and (min-width: 768px){
     display: flex;
     justify-content: flex-start;
@@ -150,7 +156,6 @@
     }
     @media screen and (min-width: 1200px){
         display:flex;
-        justify-content: baseline;
         flex-direction: row;
     }
 

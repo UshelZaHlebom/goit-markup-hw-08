@@ -79,14 +79,12 @@
 }
 
 .header__logo-footer {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo-customization {
   margin-bottom: 20px;
 }
 
@@ -133,7 +131,12 @@
 
 .social-media-footer {
   text-align: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media-footer {
+    margin-bottom: 0;
+  }
 }
 
 .footer-media-text {
@@ -201,6 +204,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-info {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-info {
     display: flex;
@@ -213,7 +222,6 @@
 @media screen and (min-width: 1200px) {
   .footer-info {
     display: flex;
-    justify-content: baseline;
     flex-direction: row;
   }
 }
@@ -505,6 +513,9 @@
     margin-top: 0;
     margin-left: 0;
   }
+  .project-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -565,27 +576,27 @@
 }
 
 .pros-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .pros-list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
-.pros-list-item {
-  flex-basis: calc(100%/2 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+@media screen and (min-width: 768px) {
+  .pros-list-item {
+    flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .pros-list-item {
     flex-basis: calc(100%/4 - 30px);
   }
@@ -832,7 +843,6 @@ section {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid palevioletred;
 }
 
 @media screen and (min-width: 480px) {
@@ -1249,11 +1259,33 @@ section {
 }
 
 .filter-btn-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  margin-top: -15px;
+  margin-left: -8px;
 }
 
-.button-customization:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .filter-btn-list {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.button-customization {
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-customization {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .button-customization:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .burger__btn {
